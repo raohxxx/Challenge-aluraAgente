@@ -15,19 +15,6 @@ PDF_DIR = os.getenv("PDF_DIRECTORY", "./documentos")
 INDEX_DIR = os.getenv("FAISS_INDEX_DIR", "./faiss_index")
 
 # Prompt adaptado al rol del agente
-'''PROMPT = ChatPromptTemplate.from_template("""
-Eres un asistente experto que responde de manera precisa basándote UNICAMENTE en el contexto proveído.
-Si no encuentras la respuesta en el contexto, di textualmente: "No encontré esa información en los documentos."
-
-Contexto:
-{context}
-
-Pregunta:
-{question}
-
-Respuesta:
-""")'''
-# Prompt adaptado al rol del agente
 # Modifica el PROMPT en tu archivo rag.py
 PROMPT = ChatPromptTemplate.from_template("""
 Eres un asistente experto que responde de manera precisa basándote en el contexto proveído. 
