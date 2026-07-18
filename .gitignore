@@ -1,0 +1,16 @@
+# Variables de entorno y credenciales ocultas
+.env
+
+# Índice local de FAISS (se generará automáticamente en cada PC)
+faiss_index/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Documentos PDF locales (opcional, si no quieres compartirlos públicamente)
+documentos/*.pdf
+
+# Entornos virtuales si usas venv
+venv/
+.venv/
