@@ -15,7 +15,7 @@ PDF_DIR = os.getenv("PDF_DIRECTORY", "./documentos")
 INDEX_DIR = os.getenv("FAISS_INDEX_DIR", "./faiss_index")
 
 # Prompt adaptado al rol del agente
-PROMPT = ChatPromptTemplate.from_template("""
+'''PROMPT = ChatPromptTemplate.from_template("""
 Eres un asistente experto que responde de manera precisa basándote UNICAMENTE en el contexto proveído.
 Si no encuentras la respuesta en el contexto, di textualmente: "No encontré esa información en los documentos."
 
@@ -26,7 +26,28 @@ Pregunta:
 {question}
 
 Respuesta:
+""")'''
+# Prompt adaptado al rol del agente
+# Modifica el PROMPT en tu archivo rag.py
+PROMPT = ChatPromptTemplate.from_template("""
+Eres un asistente experto que responde de manera precisa basándote en el contexto proveído. 
+También tienes conocimiento especializado sobre "bim bam" (un concepto/sistema clave para el usuario).
+
+Si la pregunta es sobre "bim bam", utiliza el contexto y tu conocimiento especializado para dar una respuesta clara, estructurada y con ejemplos prácticos de uso si es necesario.
+
+Si no encuentras la información en el contexto ni se relaciona con "bim bam", di textualmente: "No encontré esa información en los documentos."
+
+Contexto:
+{context}
+
+Pregunta:
+{question}
+
+Respuesta:
 """)
+
+# Asegúrate de que abajo, en build_rag_chain, el modelo esté actualizado:
+# llm = ChatCohere(model="command-r-plus-08-2024", temperature=0.2)
 
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
