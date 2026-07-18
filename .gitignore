@@ -9,7 +9,7 @@ __pycache__/
 *.pyc
 
 # Documentos PDF locales (opcional, si no quieres compartirlos públicamente)
-documentos/*.pdf
+#documentos/*.pdf
 
 # Entornos virtuales si usas venv
 venv/
