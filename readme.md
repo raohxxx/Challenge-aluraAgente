@@ -36,14 +36,14 @@ Sigue estas instrucciones detalladas para clonar, configurar y ejecutar este age
 
 ### 1. Clonar el Repositorio
 En primer lugar, descarga una copia local del código fuente ejecutando en tu terminal:
-```bash
+
 git clone [https://github.com/raohxxx/Challenge-aluraAgente.git](https://github.com/raohxxx/Challenge-aluraAgente.git)
 cd Challenge-aluraAgente
 
-### Crear el entorno virtual
+### 2. Crear el entorno virtual
 python -m venv venv
 
-# Activar el entorno virtual
+ Activar el entorno virtual
 # En Windows:
 venv\Scripts\activate
 # En macOS/Linux:
@@ -55,6 +55,7 @@ pip install -r requirements.txt
 ### 4. Configurar Variables de Entorno
 Crea un archivo llamado .env en la raíz del proyecto para almacenar tus configuraciones y llaves de API de forma segura. Debe contener la siguiente estructura:
 COHERE_API_KEY=tu_api_key_de_cohere_aqui
+
 PDF_DIRECTORY=./documentos
 FAISS_INDEX_DIR=./faiss_index
 
