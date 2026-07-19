@@ -1,6 +1,6 @@
 # Agente RAG Interactivo con LangChain, Cohere y Streamlit
 
-Este proyecto implementa un agente de Generación Aumentada por Recuperación (RAG) utilizando la versión moderna de **LangChain 1.x**, los embeddings y modelos generativos gratuitos (plan *trial*) de **Cohere**, y una base de datos vectorial local con **FAISS**. Todo el sistema está desplegado bajo una interfaz web interactiva con **Streamlit** que simula un entorno de chat continuo con memoria de sesión y sugerencias de preguntas orientadas al concepto **Bim Bam**.
+Este proyecto implementa un agente de Generación Aumentada por Recuperación (RAG) utilizando la versión moderna de **LangChain 1.x**, los embeddings y modelos generativos gratuitos (plan *trial*) de **Cohere**, y una base de datos vectorial local con **FAISS**. Todo el sistema está desplegado bajo una interfaz web interactiva con **Streamlit** que simula un entorno de chat continuo con memoria de sesión y sugerencias de preguntas orientadas al concepto **tienda online Bim Bam**. usando la documentacion sugerida en el challenge.
 
 ---
 
