@@ -49,23 +49,23 @@ venv\Scripts\activate
 # En macOS/Linux:
 source venv/bin/activate
 
-###3. Instalar Dependencias
+### 3. Instalar Dependencias
 Instala los paquetes y librerías necesarias especificadas en el archivo de requerimientos:
 pip install -r requirements.txt
-4. Configurar Variables de Entorno
+### 4. Configurar Variables de Entorno
 Crea un archivo llamado .env en la raíz del proyecto para almacenar tus configuraciones y llaves de API de forma segura. Debe contener la siguiente estructura:
 COHERE_API_KEY=tu_api_key_de_cohere_aqui
 PDF_DIRECTORY=./documentos
 FAISS_INDEX_DIR=./faiss_index
 
-###5. Cargar la Documentación de Bim Bam
+### 5. Cargar la Documentación de Bim Bam
 El sistema busca archivos en formato PDF para construir su base de conocimientos.
 
 Crea una carpeta llamada documentos en la raíz del proyecto (si el script no la ha creado automáticamente).
 
 Deposita dentro de esta carpeta todos los documentos PDF correspondientes a las políticas, guías y manuales de la tienda online Bim Bam.
 
-###6. Ejecutar la Aplicación
+### 6. Ejecutar la Aplicación
 Inicia el servidor local de Streamlit para interactuar con el agente en tu navegador web:
 streamlit run app.py
 Una vez ejecutado, se abrirá automáticamente una pestaña (por defecto en http://localhost:8501) donde podrás empezar a chatear con tu nuevo asistente experto.
