@@ -40,7 +40,7 @@ En primer lugar, descarga una copia local del código fuente ejecutando en tu te
 git clone [https://github.com/raohxxx/Challenge-aluraAgente.git](https://github.com/raohxxx/Challenge-aluraAgente.git)
 cd Challenge-aluraAgente
 
-### 2. Crear el entorno virtual
+### 2.Crear el entorno virtual
 python -m venv venv
 
  Activar el entorno virtual
