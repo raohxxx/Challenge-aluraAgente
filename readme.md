@@ -44,9 +44,9 @@ cd Challenge-aluraAgente
 python -m venv venv
 
  Activar el entorno virtual
-# En Windows:
+## En Windows:
 venv\Scripts\activate
-# En macOS/Linux:
+## En macOS/Linux:
 source venv/bin/activate
 
 ### 3. Instalar Dependencias
